@@ -9,6 +9,10 @@
 <nav>
     <ul>
         <span class="dash-vert">&nbsp</span>
+        <li>
+            <span class="dash-hori">&nbsp;</span>
+            <a href="/" class="title" aria-current={$page.url.pathname === '/'}>home</a>
+        </li>
         <li class:expanded={expandedArt}>
             <button on:click|preventDefault={() => expandedArt = !expandedArt}>
                 <span class="icon-expand">&boxplus;</span>
@@ -94,12 +98,12 @@
 
         position: absolute;
         left: 19px;
-        top: 32px;
+        top: 20px;
         bottom: 32px;
         /* bottom: 154px; */
     }
     ul > li > ul .dash-vert{
-        left: 64px;
+        left: 58px;
         top: 0px;
         bottom: 18px;
     }
@@ -114,7 +118,7 @@
     /* styles w/out icon */
     li > .dash-hori{
         width: 24px;
-        left: 24px;
+        left: 20px;
     }
     li > .title{
         margin-left: 44px;
