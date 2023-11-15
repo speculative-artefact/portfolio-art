@@ -16,3 +16,11 @@ html{
 	-moz-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
+a{
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+a:hover{
+    color: var(--color-accent);
+}

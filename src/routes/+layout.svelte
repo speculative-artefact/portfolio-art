@@ -1,17 +1,20 @@
 <script>
-    import Nav from '../components/Nav.svelte';
+    import Nav from '$lib/components/Nav.svelte';
+    import Intro from '$lib/components/Intro.svelte';
+
+    export let data;
 </script>
 
 <div class="content">
     <header>
-        <p>bradley walker is making virtual representations / recreations / rememberings of spaces / objects / moments. reimagining anthropocentric worlds and anxiety as murky, digitised archives for a future without us. distributed as software, prints, and interactive installations.</p>
+        <Intro />
     </header>
     <section>
-        <Nav />
+        <!-- <Nav art_records={data.art_records} /> -->
         <div class="detail"><slot /></div>
     </section>
     <footer>
-        <p>upcoming: group exhibition with M O N D A G at werkpaard amsterdam, 24&mdash;26 nov [<a href="https://www.mondag.org/" target="_blank">link</a>]</p>
+        <p>upcoming: group exhibition with M O N D A G at de klenke 4 amsterdam, 26 nov [<a href="https://www.mondag.org/" target="_blank">link</a>]</p>
     </footer>
 </div>
 

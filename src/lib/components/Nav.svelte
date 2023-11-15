@@ -1,5 +1,8 @@
 <script>
     import { page } from '$app/stores';
+
+    /** @type {Array} */
+    export let art_records;
     /** @type {boolean} */
     let expandedArt = true;
     /** @type {boolean} */
@@ -9,28 +12,25 @@
 <nav>
     <ul>
         <span class="dash-vert">&nbsp</span>
-        <li>
+        <!-- <li>
             <span class="dash-hori">&nbsp;</span>
             <a href="/" class="title" aria-current={$page.url.pathname === '/'}>home</a>
-        </li>
+        </li> -->
         <li class:expanded={expandedArt}>
             <button on:click|preventDefault={() => expandedArt = !expandedArt}>
                 <span class="icon-expand">&boxplus;</span>
                 <span class="icon-collapse">&boxminus;</span>
                 <span class="dash-hori">&nbsp;</span>
-                <span class="title">art records</span>
+                <span class="title">art_records</span>
             </button>
             <ul>
                 <span class="dash-vert">&nbsp</span>
-                <li>
-                    <span class="dash-hori">&nbsp;</span>
-                    <a href="/art_records/residual:1" class="title" aria-current={$page.url.pathname === '/art_records/residual:1'}>residual/1</a></li>
-                <li>
-                    <span class="dash-hori">&nbsp;</span>
-                    <a href="/art_records/void_echo_02" class="title" aria-current={$page.url.pathname === '/art_records/void_echo_02'}>void_echo_02</a></li>
-                <li>
-                    <span class="dash-hori">&nbsp;</span>
-                    <a href="/art_records/new" class="title" aria-current={$page.url.pathname === '/art_records/new'}>new</a></li>
+                {#each art_records as record}
+                    <li>
+                        <span class="dash-hori">&nbsp;</span>
+                        <a href="/art_records/{record.slug}" class="title" aria-current="{$page.url.pathname === `/art_records/${record.slug}`}">{record.title}</a>
+                    </li>
+                {/each}
             </ul>
         </li>
         <li>
@@ -45,7 +45,7 @@
             <span class="dash-hori">&nbsp;</span>
             <a href="/biodata" class="title" aria-current={$page.url.pathname === "/biodata"}>biodata</a>
         </li>
-        <li class:expanded={expandedCom}>
+        <!-- <li class:expanded={expandedCom}>
             <button on:click|preventDefault={() => expandedCom = !expandedCom}>
                 <span class="icon-expand">&boxplus;</span>
                 <span class="icon-collapse">&boxminus;</span>
@@ -67,7 +67,7 @@
                     <a href="" class="title">e-mail</a>
                 </li>
             </ul>
-        </li>
+        </li> -->
     </ul>
 </nav>
 
@@ -99,7 +99,7 @@
         position: absolute;
         left: 19px;
         top: 20px;
-        bottom: 32px;
+        bottom: 19px;
         /* bottom: 154px; */
     }
     ul > li > ul .dash-vert{
@@ -131,9 +131,9 @@
     button > .title{
         margin-left: 16px;
     }
-    .icon-trans{
+    /* .icon-trans{
         visibility: hidden;
-    }
+    } */
     .expanded .icon-expand, .icon-collapse{
         display: none;
     }
@@ -151,12 +151,12 @@
         text-decoration: none;
         position: relative;
     }
-    a:hover{
-        /* text-decoration: underline dotted; */
-    }
+    /* a:hover{
+        text-decoration: underline dotted;
+    } */
     a[aria-current="true"]{
         background-color: var(--color-black);
         border-color: var(--color-white);
-        color: red;
+        color: var(--color-accent);
     }
 </style>
