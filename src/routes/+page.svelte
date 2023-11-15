@@ -6,7 +6,7 @@
 	<title>bradley walker / amsterdam-based artist</title>
 </svelte:head>
 
-<p>born in cape town and graduated from the gerrit rietveld academie dogtime program specialising in the fields of interaction design and unstable media. upcoming / recent exhibitions of their work include de klenke 4 [nl], vrij paleis [nl], and art chapel amsterdam [nl].</p>
+<p>born in cape town and graduated from the gerrit rietveld academie dogtime program specialising in the fields of interaction design and unstable media. upcoming / recent exhibitions of their work include de klenke 4 (nl), vrij paleis (nl), and art chapel amsterdam (nl).</p>
 
 <style>
     

@@ -2,7 +2,7 @@
     import Nav from '$lib/components/Nav.svelte';
     import Intro from '$lib/components/Intro.svelte';
 
-    export let data;
+    // export let data;
 </script>
 
 <div class="content">
