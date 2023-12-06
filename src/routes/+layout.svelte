@@ -14,7 +14,7 @@
         <div class="detail"><slot /></div>
     </section>
     <footer>
-        <p>upcoming: group exhibition with M O N D A G at de klenke 4 amsterdam, 26 nov [<a href="https://www.mondag.org/" target="_blank">link</a>]</p>
+        <!-- <p>upcoming: group exhibition with M O N D A G at de klenke 4 amsterdam, 26 nov [<a href="https://www.mondag.org/" target="_blank">link</a>]</p> -->
     </footer>
 </div>
 
