@@ -1,5 +1,6 @@
 :root{
-    --color-black: rgba(0, 18, 11, 1);
+    /* --color-black: rgba(0, 18, 11, 1); */
+    --color-black: rgba(11, 15, 11, 1);
 	--color-white: rgb(255, 255, 255);
 	--color-accent: rgba(0, 0, 238, 1);
 	--color-accent-alt: rgba(0, 0, 160, 1);
