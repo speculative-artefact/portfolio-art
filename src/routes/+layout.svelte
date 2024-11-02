@@ -1,8 +1,6 @@
 <script>
-    import Nav from '$lib/components/Nav.svelte';
+    // import Nav from '$lib/components/Nav.svelte';
     import Intro from '$lib/components/Intro.svelte';
-    import Artworks from '$lib/components/Artworks.svelte';
-
     // export let data;
 </script>
 
@@ -12,8 +10,9 @@
     </header>
     <section>
         <!-- <Nav art_records={data.art_records} /> -->
-        <div class="detail"><slot /></div>
-        <Artworks />
+        <!-- <div class="detail"><slot /></div> -->
+        <slot />
+        
     </section>
     <footer>
         <p>upcoming: group exhibition with <a href="https://www.mondag.org/" target="_blank">M O N D A G</a> at ateliers het hoofdkantoor in haarlem. 2, 3, 9, and 10 nov 2024 [<a href="https://www.kunstlijnhaarlem.nl/expositie/order/" target="_blank">link</a>]</p>
