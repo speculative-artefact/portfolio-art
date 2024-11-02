@@ -131,6 +131,18 @@
         margin: 0 auto 80px auto;
         max-width: 90vw;
     }
+    
+    @media (max-width: 500px) {
+        .grid {
+            margin-bottom: 120px;
+            width: 100%;
+        }
+        .tile img,
+        .tile video {
+            max-width: 100% !important;
+            width: 100%;
+        }
+    }
 
     .tile {
         /* width: 400px;

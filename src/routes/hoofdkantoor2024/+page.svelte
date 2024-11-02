@@ -14,10 +14,21 @@
         margin: 0 auto 40px auto;
     }
     .desc {
-        width: 576px;
+        width: 100%;
+        max-width: 576px;
         margin: 0 auto;
     }
     .desc:last-child {
         margin-bottom: 160px;
     }
+
+    @media (max-width: 500px) {
+        img {
+            max-width: 100%;
+        }
+    }
+    .desc:last-child {
+        margin-bottom: 240px;
+    }
+
 </style>
