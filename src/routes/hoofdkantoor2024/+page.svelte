@@ -1,6 +1,16 @@
-<script></script>
+<script>
+    // import { T } from '@threlte/core'
+    // import { browser } from '$app/environment';
+    import { Canvas } from '@threlte/core'
+    import Scene from '$lib/components/Scene.svelte'
+</script>
 
-<img src="https://zsbqtqognaiogrpqaoot.supabase.co/storage/v1/object/public/art-records/residual-vr.webp" alt="still image from the residual vr project">
+<div class="object">
+    <Canvas>
+        <Scene />
+    </Canvas>
+</div>
+<!-- <img src="https://zsbqtqognaiogrpqaoot.supabase.co/storage/v1/object/public/art-records/residual-vr.webp" alt="still from the residual vr project"> -->
 <p class="desc">residula/vr (2024)</p>
 <p class="desc">over two years, i have been imagining a speculative city, continuously building and unbuilding it using unreal engine and blender. residual archives this through a series of interactive works, each capturing different spaces and moments from within the morphing city.</p>
 <p class="desc">this third iteration maps a virtual dwelling onto the physical boundaries of the exhibition space. moving through these coordinates, visitors encounter shadows of those who came before—my anxieties etched into their architecture, their absence more tangible than presence.</p>
@@ -8,6 +18,10 @@
 <p class="desc"><a href="/">home</a></p>
 
 <style>
+    .object{
+        height: 60vh;
+        width: 100%;
+    }
     img {
         max-width: 70vw;
         max-height: 60vh;
@@ -26,9 +40,10 @@
         img {
             max-width: 100%;
         }
-    }
-    .desc:last-child {
-        margin-bottom: 240px;
+
+        .desc:last-child {
+            margin-bottom: 240px;
+        }
     }
 
 </style>
