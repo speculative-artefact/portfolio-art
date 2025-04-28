@@ -14,9 +14,9 @@
         <slot />
         
     </section>
-    <footer>
+    <!-- <footer>
         <p>upcoming: group exhibition with <a href="https://www.mondag.org/" target="_blank">M O N D A G</a> at ateliers het hoofdkantoor in haarlem. 2, 3, 9, and 10 nov 2024 [<a href="https://www.kunstlijnhaarlem.nl/expositie/order/" target="_blank">link</a>]</p>
-    </footer>
+    </footer> -->
 </div>
 
 <style>
