@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Bradley Walker
+Contact: bradleywalkernet [at] gmail [dot] com
+Site: https://bradleywalker.net
+
+/* SITE */
+Last update: 2025-04-28
+Standards: HTML5, CSS3, JavaScript
+Components: SvelteKit
+Software: VS Code

@@ -4,6 +4,28 @@
     // export let data;
 </script>
 
+<svelte:head>
+	<!-- General SEO -->
+	<meta name="author" content="Bradley Walker">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bradleywalker.net/">
+	<meta property="og:site_name" content="Bradley Walker Artist Portfolio">
+	<!-- og:title, og:description, og:image will be overridden by specific pages -->
+	<meta property="og:title" content="Bradley Walker / Amsterdam-based Artist">
+	<meta property="og:description" content="Bradley Walker is an Amsterdam-based artist working with speculative virtual worlds and interactive installations.">
+	<meta property="og:image" content="%sveltekit.assets%/logo-inverted.png"> <!-- Add a default social image -->
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://bradleywalker.net/">
+	<!-- twitter:title, twitter:description, twitter:image will be overridden by specific pages -->
+	<meta property="twitter:title" content="Bradley Walker / Amsterdam-based Artist">
+	<meta property="twitter:description" content="Bradley Walker is an Amsterdam-based artist working with speculative virtual worlds and interactive installations.">
+	<meta property="twitter:image" content="%sveltekit.assets%/logo-inverted.png"> <!-- Add a default social image -->
+</svelte:head>
+
 <div class="content">
     <header>
         <Intro />
@@ -36,7 +58,7 @@
         gap: 24px;
 		position: relative;
     }
-    footer{
+    /* footer{
         background-color: var(--color-black);
         border-top: 1px solid var(--color-white);
         display: block;
@@ -45,5 +67,5 @@
         width: 100vw;
         position: fixed;
         bottom: 0;
-    }
+    } */
 </style>
